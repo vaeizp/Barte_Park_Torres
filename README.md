@@ -13,3 +13,4 @@ Our project aims to help students and workers alike to balance their tasks prope
 
 
 To access our project proposal, click [here](https://docs.google.com/document/d/1ZcmexSEgFxNmGWgqRGxSxqpUH89Ta0pNyAHw4gg1NG8/edit?tab=t.0})
+PDF format, click [here](file:///C:/Users/Student/Downloads/CS%20PROJECT.pdf)
