@@ -12,4 +12,4 @@ Our project aims to help students and workers alike to balance their tasks prope
 
 
 
-To access our project proposal in Google Docs, click [here](https://docs.google.com/document/d/1ZcmexSEgFxNmGWgqRGxSxqpUH89Ta0pNyAHw4gg1NG8/edit?tab=t.0})
+To access our project proposal in Google Docs, click [here](https://docs.google.com/document/d/1ZcmexSEgFxNmGWgqRGxSxqpUH89Ta0pNyAHw4gg1NG8/edit?tab=t.0}). In case the document doesn't work, please check out the PDF file posted.
