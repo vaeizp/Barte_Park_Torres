@@ -1,6 +1,6 @@
 # Personal Requirement Planner
 
-Have you ever had problems with juggling your requirements together and you often complain that your teachers give too much homework to the point you just give up and go back to sleep? Well, worry no more! We, Team Name, are here to help you!
+Have you ever had problems with juggling your requirements together and you often complain that your teachers give too much homework to the point you just give up and go back to sleep? Well, worry no more! We, Giga Bites, are here to help you!
 
 ## About Our Project
 
