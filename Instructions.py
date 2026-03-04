@@ -1,0 +1,8 @@
+print ("1 - Brain Dump (Add Task)")
+print ("Got a project? Homework? Existential dread? Toss it in! This adds your overwhelming thoughts into an organized list.")
+print ("2 - Scroll of Destiny (View Already Added Tasks)")
+print ("Behold! A glorious list of everything you need to accomplish, all in one place. No more sticky notes!")
+print ("3 - Victory Lap (Mark Complete a Task)")
+print ("Done? Jot it! Mark that task complete and enjoy the sweet, sweet dopamine rush of progress.")
+print ("4 - Escape Room (Exit the application)")
+print ("Done for the day? Peace out! Your tasks will be safe in Plan-O-Rama for next time.")
