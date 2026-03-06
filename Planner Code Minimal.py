@@ -14,7 +14,7 @@ try:
 except FileNotFoundError:
     print("Error: The file 'tasks.json' was not found.")
 except:
-    tasks = []
+    tasks = [] # When the file doesn't work, we can start off with an empty dictionary with the name "tasks" that will work as a replacement for the JSON file.
     print("You currently have no tasks to finish.\n")
 
 
@@ -41,7 +41,7 @@ print(" | |              | || |              | || |              | || |         
 time.sleep(0.25)
 print(" | '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |")
 time.sleep(0.25)
-print(" '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'")
+print(" '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'") # Silly ASCII art we wanted to add that says "PLAN-O-RAMA"!
 a = True
 print("Welcome...")
 time.sleep(0.5)
@@ -60,11 +60,11 @@ while count < bar_length:
     time.sleep(.75)
     count += 1
 
-print("\nPlan-O-Rama is built not only to help you be organized with tasks, but also help you feel more sure and certain about tasks you have done.")
+print("\nPlan-O-Rama is built not only to help you be organized with tasks, but also help you feel more sure and certain about tasks you have done.") # This will serve as the introduction for the code
 time.sleep(0.5)
 print("Plan-O-Rama is certainly your go-to portable study buddy, with only one click away!")
 time.sleep(1)
-print("\n Here are the INSTRUCTIONS!")
+print("\n Here are the INSTRUCTIONS!") # Instructions on how to use said menu options
 countin = 0
 separation_len = 20
 while countin < separation_len:
@@ -75,7 +75,7 @@ print ("\n1 - Brain Dump (Add Task)")
 print ("Got a project? Homework? Existential dread? Toss it in! This adds your overwhelming thoughts into an organized list.")
 time.sleep(1)
 print ("2 - Scroll of Destiny (View Already Added Tasks)")
-print ("Behold! A glorious list of everything you need to accomplish, all in one place. No more sticky notes!")
+print ("Behold! A glorious list of everything you need to accomplish, all in one place. Don't worry about wasting sticky notes now!")
 time.sleep(1)
 print ("3 - Victory Lap (Mark Complete a Task)")
 print ("Done? Check it! Mark that task complete and enjoy the sweet, sweet relief of progress.")
@@ -87,7 +87,7 @@ print("-----------------------------------------")
 
 while a == True:
     time.sleep(2)
-    print("\nWelcome, humble student! What would you like to do?")
+    print("\nWelcome, humble student! What would you like to do?") # The ultimate part of the code. The main menu!
     print("1 - Add Task")
     print("2 - View Already Added Tasks")
     print("3 - Mark Complete a Task")
@@ -98,7 +98,7 @@ while a == True:
     # ---------------------------------
     # Add Task
     # ---------------------------------
-    if choice == "1":
+    if choice == "1": 
 
         print("\n↓↓↓↓↓↓↓↓↓↓↓↓\n")
 
@@ -128,7 +128,9 @@ while a == True:
 
         print("\nTask added successfully!")
         print("I pray your productivity comes alive and well!\n")
-
+# --------------------------
+# List of Tasks
+# --------------------------
     elif choice == "2":
         print("You chose: \nList of Tasks")
 
@@ -138,6 +140,10 @@ while a == True:
             print(tasks)
         time.sleep(3)
         print("Returning to menu...")
+
+# -----------------------
+# Mark Complete a Task
+# -----------------------
     elif choice == "3":
         if len(tasks) == 0:
             print("There are no tasks to complete. Keep up the good work!")
@@ -156,6 +162,9 @@ while a == True:
                 print("That task number does not exist. Please enter another number.")
                 time.sleep(1)
                 print("Returning to main menu...")
+# -----------------
+# Close the program
+# ----------------
     elif choice == "4":
         print(f"Terminating the Program", end="")
         time.sleep(0.5)
