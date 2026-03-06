@@ -1,5 +1,3 @@
-
-
 import json
 from datetime import datetime
 import time
@@ -27,19 +25,19 @@ print(" .----------------.  .----------------.  .----------------.  .-----------
 time.sleep(0.25)
 print(" | .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |")
 time.sleep(0.25)
-print(" | |   __     | || |   _      | || |      _      | || | _  _  | || |              | || |     _     | || |              | || |  ____     | || |      _      | || | _    _ | || |      _      | |")
+print(" | |   ____     | || |   ___      | || |      _      | || | ___  ___  | || |              | || |     __     | || |              | || |  _____     | || |      _      | || | ___    __ | || |      __      | |")
 time.sleep(0.25)
-print(" | |  |_   _ ,  | || |  |   |     | || |     /  ,     | || ||   ,|_   | | || |              | || |   .'    `.   | || |              | || | |   _ ,    | || |     /  ,     | || ||   ,  /   _|| || |     /  ,     | |")
+print(" | |  |_   _ ,   | || |  |   |     | || |     /  ,     | || ||   ,|_   | | || |              | || |   .'    `.   | || |              | || | |   _ ,    | || |     /  ,     | || ||   ,  /   _|| || |     /  ,     | |")
 time.sleep(0.25)
-print(" | |  | |__) |  | || |   | |       | || |    / /, ,    | || |  |   , | |   | || |    __    | || |  /  .--.  ,  | || |    __    | || |   | |__) |   | || |    / /, ,    | || |  |   ,/   |  | || |    / /, ,    | |")
+print(" | |    | |__) |  | || |    | |       | || |    / /, ,    | || |  |   , | |   | || |    ____    | || |  /  .--.  ,  | || |    ____    | || |   | |__) |   | || |    / /, ,    | || |  |   ,/   |  | || |    / /, ,    | |")
 time.sleep(0.25)
-print(" | |  |  _/    | || |  | |   _   | || |   / __ ,   | || |  | |, ,| |   | || |   |______|   | || |  | |    | |  | || |   |______|   | || |   |  _ /    | || |   / _ ,   | || |  | |,  /| |  | || |   / __ ,   | |")
+print(" | |    |  __/   | || |    | |   _   | || |   / ___ ,   | || |  | |, ,| |   | || |   |______|   | || |  | |    | |  | || |   |______|   | || |   |  _ /    | || |   / ___ ,   | || |  | |,  /| |  | || |   / __ ,   | |")
 time.sleep(0.25)
-print(" | |  | |       | || |  | |__/ |  | || | / /    , , | || | | |,   |  | || |              | || |  ,  `--'  /  | || |              | || |  | |  , ,  | || | / /    , , | || | | |,/_| |_ | || | / /    , , | |")
+print(" | |   | |      | || |   | |__/ |  | || | _/ /    , , | || | | |,   |_  | || |              | || |  ,  `--'  /  | || |              | || |  | |  , ,  | || | / /    , , | || | | |,/_| |_ | || | / /    , , | |")
 time.sleep(0.25)
-print(" | |  |_____|   | || |  |________|  | || ||____|  |____|| || ||_____|,____| | || |              | || |   `.____.'   | || |              | || | |____| |___| | || ||____|  |____|| || ||_____||_____|| || ||____|  |____|| |")
+print(" | |  |_____|     | || |  |________|  | || ||____|  |____|| || ||_____|,____| | || |              | || |   `.____.'   | || |              | || | |____| |___| | || ||____|  |____|| || ||_____||_____|| || ||____|  |____|| |")
 time.sleep(0.25)
-print(" | |            | || |              | || |              | || |              | || |              | || |              | || |              | || |              | || |              | || |              | || |              | |")
+print(" | |              | || |              | || |              | || |              | || |              | || |              | || |              | || |              | || |              | || |              | || |              | |")
 time.sleep(0.25)
 print(" | '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |")
 time.sleep(0.25)
@@ -62,21 +60,34 @@ while count < bar_length:
     time.sleep(.75)
     count += 1
 
+print("\nPlan-O-Rama is built not only to help you be organized with tasks, but also help you feel more sure and certain about tasks you have done.")
+time.sleep(0.5)
+print("Plan-O-Rama is certainly your go-to portable study buddy, with only one click away!")
+time.sleep(1)
 print("\n Here are the INSTRUCTIONS!")
-print("-----------------------------------------")
-print ("1 - Brain Dump (Add Task)")
+countin = 0
+separation_len = 20
+while countin < separation_len:
+    print("-", end="-")
+    time.sleep(0.5)
+    countin += 1
+print ("\n1 - Brain Dump (Add Task)")
 print ("Got a project? Homework? Existential dread? Toss it in! This adds your overwhelming thoughts into an organized list.")
+time.sleep(1)
 print ("2 - Scroll of Destiny (View Already Added Tasks)")
 print ("Behold! A glorious list of everything you need to accomplish, all in one place. No more sticky notes!")
+time.sleep(1)
 print ("3 - Victory Lap (Mark Complete a Task)")
-print ("Done? Jot it! Mark that task complete and enjoy the sweet, sweet dopamine rush of progress.")
+print ("Done? Check it! Mark that task complete and enjoy the sweet, sweet relief of progress.")
+time.sleep(1)
 print ("4 - Escape Room (Exit the application)")
-print ("Done for the day? Peace out! Your tasks will be safe in Plan-O-Rama for next time.")
+print ("Done for the day? Bye-bye! Your tasks will be safe in Plan-O-Rama for the next time you come back here!")
+time.sleep(1)
 print("-----------------------------------------")
 
 while a == True:
-
-    print("Welcome, humble student! What would you like to do?")
+    time.sleep(2)
+    print("\nWelcome, humble student! What would you like to do?")
     print("1 - Add Task")
     print("2 - View Already Added Tasks")
     print("3 - Mark Complete a Task")
@@ -125,7 +136,8 @@ while a == True:
             print("You've accomplished all your tasks. So proud of you!")
         else:
             print(tasks)
-
+        time.sleep(3)
+        print("Returning to menu...")
     elif choice == "3":
         if len(tasks) == 0:
             print("There are no tasks to complete. Keep up the good work!")
