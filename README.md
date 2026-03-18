@@ -2,7 +2,7 @@
 Have you ever had problems with juggling your requirements together and you often complain that your teachers give too much homework to the point you just give up and go back to sleep? Well, worry no more! We, Giga Bites, are here to help you!
 
 ## About Our Project
-Firstly, what is this project? Well, to strt it off, let's start with the name. Plan-O-Rama, is kind of a word play. We took the suffix, "o-rama", meaning a big event or collection, which compliments the word plan. Put together, we like to think it means big plan! 
+Firstly, what is this project? Well, to start it off, let's start with the name. Plan-O-Rama, is kind of a word play. We took the suffix, "o-rama", meaning a big event or collection, which compliments the word plan. Put together, we like to think it means big plan! 
 The Plan-O-Rama is a software made for students who are tired of being surprised by deadlines that appear out of nowhere. This planner helps you organize your academic tasks, view them on a clean calendar, and keep track of what's due! All while keeping things friendly, colorful and stress-free!
 
 ## Why did we make this?
