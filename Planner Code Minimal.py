@@ -1,6 +1,7 @@
 import json
 from datetime import datetime
 import time
+import random
 
 filename = "tasks.json"
 
@@ -14,34 +15,34 @@ try:
 except FileNotFoundError:
     print("Error: The file 'tasks.json' was not found.")
 except:
-    tasks = [] # When the file doesn't work, we can start off with an empty dictionary with the name "tasks" that will work as a replacement for the JSON file.
+    tasks = []
     print("You currently have no tasks to finish.\n")
 
 
 # -------------------------
-# Main whiel loop
+# Main while loop
 # -------------------------
 print(" .----------------.  .----------------.  .----------------.  .-----------------. .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.")
 time.sleep(0.25)
 print(" | .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |")
 time.sleep(0.25)
-print(" | |   ____     | || |   ___      | || |      _      | || | ___  ___  | || |              | || |     __     | || |              | || |  _____     | || |      _      | || | ___    __ | || |      __      | |")
+print(" | |   ____       | || |   ___        | || |       _      | || |    ___  ___  | || |              | || |      __      | || |              | || |  ______      | || |     _ ,      | || |  ___    __   | || |      __      | |")
 time.sleep(0.25)
-print(" | |  |_   _ ,   | || |  |   |     | || |     /  ,     | || ||   ,|_   | | || |              | || |   .'    `.   | || |              | || | |   _ ,    | || |     /  ,     | || ||   ,  /   _|| || |     /  ,     | |")
+print(" | |  |_   _ ,    | || |  |   |       | || |     / , \\    | || |  |   ,|_   | | || |              | || |   .'    `.   | || |              | || | |   _   ,    | || |    /   ,     | || | |  ,  /  _|  | || |     /  \\     | |")
 time.sleep(0.25)
-print(" | |    | |__) |  | || |    | |       | || |    / /, ,    | || |  |   , | |   | || |    ____    | || |  /  .--.  ,  | || |    ____    | || |   | |__) |   | || |    / /, ,    | || |  |   ,/   |  | || |    / /, ,    | |")
+print(" | |  | |__) |    | || |   | |        | || |    / /,\\ \\   | || |  |   , | |   | || |    ______    | || |  /  .--.  ,  | || |    ______    | || |  | |__) |    | || |   / /,'  ,   | || | | | , /|  |  | || |    / /\\ ,    | |")
 time.sleep(0.25)
-print(" | |    |  __/   | || |    | |   _   | || |   / ___ ,   | || |  | |, ,| |   | || |   |______|   | || |  | |    | |  | || |   |______|   | || |   |  _ /    | || |   / ___ ,   | || |  | |,  /| |  | || |   / __ ,   | |")
+print(" | |  |  __/      | || |  | |   _     | || |   /  ___, \\  | || |  | |, ,| |   | || |   |______|   | || |  | |    | |  | || |   |______|   | || |  |  _ /      | || |  /  ___   ,  | || | | |  , | |   | || |   / /__\\ \\   | |")
 time.sleep(0.25)
-print(" | |   | |      | || |   | |__/ |  | || | _/ /    , , | || | | |,   |_  | || |              | || |  ,  `--'  /  | || |              | || |  | |  , ,  | || | / /    , , | || | | |,/_| |_ | || | / /    , , | |")
+print(" | |  | |         | || |  | |__/ |    | || | _/ /_   ,  \\ | || | | |,   |_ _  | || |              | || |  ,  `--'  /  | || |              | || |  | |  , |_   | || | /  /   /   , | || | | |, _|  |_  | || | _/ /    , ,_ | |")
 time.sleep(0.25)
-print(" | |  |_____|     | || |  |________|  | || ||____|  |____|| || ||_____|,____| | || |              | || |   `.____.'   | || |              | || | |____| |___| | || ||____|  |____|| || ||_____||_____|| || ||____|  |____|| |")
+print(" | |  |_____|     | || |  |________|  | || ||____|  |____|| || | |___|,____|  | || |              | || |   `.____.'   | || |              | || | |___|  |___| | || ||____|  |____|| || ||_____||_____|| || ||____|  |____|| |")
 time.sleep(0.25)
 print(" | |              | || |              | || |              | || |              | || |              | || |              | || |              | || |              | || |              | || |              | || |              | |")
 time.sleep(0.25)
 print(" | '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |")
 time.sleep(0.25)
-print(" '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'") # Silly ASCII art we wanted to add that says "PLAN-O-RAMA"!
+print(" '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'")
 a = True
 print("Welcome...")
 time.sleep(0.5)
@@ -56,38 +57,13 @@ print("\nPlease wait")
 count = 0
 bar_length = 10
 while count < bar_length:
+    w = random.randint(1,3)
     print("█", end="█")
-    time.sleep(.75)
+    time.sleep((w - 0.5))
     count += 1
-
-print("\nPlan-O-Rama is built not only to help you be organized with tasks, but also help you feel more sure and certain about tasks you have done.") # This will serve as the introduction for the code
-time.sleep(0.5)
-print("Plan-O-Rama is certainly your go-to portable study buddy, with only one click away!")
-time.sleep(1)
-print("\n Here are the INSTRUCTIONS!") # Instructions on how to use said menu options
-countin = 0
-separation_len = 20
-while countin < separation_len:
-    print("-", end="-")
-    time.sleep(0.5)
-    countin += 1
-print ("\n1 - Brain Dump (Add Task)")
-print ("Got a project? Homework? Existential dread? Toss it in! This adds your overwhelming thoughts into an organized list.")
-time.sleep(1)
-print ("2 - Scroll of Destiny (View Already Added Tasks)")
-print ("Behold! A glorious list of everything you need to accomplish, all in one place. Don't worry about wasting sticky notes now!")
-time.sleep(1)
-print ("3 - Victory Lap (Mark Complete a Task)")
-print ("Done? Check it! Mark that task complete and enjoy the sweet, sweet relief of progress.")
-time.sleep(1)
-print ("4 - Escape Room (Exit the application)")
-print ("Done for the day? Bye-bye! Your tasks will be safe in Plan-O-Rama for the next time you come back here!")
-time.sleep(1)
-print("-----------------------------------------")
-
 while a == True:
-    time.sleep(2)
-    print("\nWelcome, humble student! What would you like to do?") # The ultimate part of the code. The main menu!
+
+    print("\nWelcome, humble student! What would you like to do?")
     print("1 - Add Task")
     print("2 - View Already Added Tasks")
     print("3 - Mark Complete a Task")
@@ -98,7 +74,7 @@ while a == True:
     # ---------------------------------
     # Add Task
     # ---------------------------------
-    if choice == "1": 
+    if choice == "1":
 
         print("\n↓↓↓↓↓↓↓↓↓↓↓↓\n")
 
@@ -128,9 +104,7 @@ while a == True:
 
         print("\nTask added successfully!")
         print("I pray your productivity comes alive and well!\n")
-# --------------------------
-# List of Tasks
-# --------------------------
+
     elif choice == "2":
         print("You chose: \nList of Tasks")
 
@@ -138,12 +112,7 @@ while a == True:
             print("You've accomplished all your tasks. So proud of you!")
         else:
             print(tasks)
-        time.sleep(3)
-        print("Returning to menu...")
 
-# -----------------------
-# Mark Complete a Task
-# -----------------------
     elif choice == "3":
         if len(tasks) == 0:
             print("There are no tasks to complete. Keep up the good work!")
@@ -162,9 +131,6 @@ while a == True:
                 print("That task number does not exist. Please enter another number.")
                 time.sleep(1)
                 print("Returning to main menu...")
-# -----------------
-# Close the program
-# ----------------
     elif choice == "4":
         print(f"Terminating the Program", end="")
         time.sleep(0.5)
