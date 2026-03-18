@@ -12,4 +12,4 @@ We did this because we think students deserve peace, organization, and a proper 
 The Plan-O-Rama was made to make school life easier, clearer, and maybe a whole lot more like a place for education and not for eternal torment of forgetfulness. Let it help you survive the deep depths of school with style. Because deadlines *are* scary... but school will be a whole lot less scary with your portable study buddy.
 
 # Made by yours truly, the Giga Bites <3
-*Access the proposal uploaded on the repository titled "Plan-O-Rama" for more details*
+*Access the proposal uploaded on the repository titled "Plan-O-Rama" for more details about our project*
