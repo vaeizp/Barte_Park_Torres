@@ -64,12 +64,19 @@ while count < bar_length:
 while a == True:
 
     print("\nWelcome, humble student! What would you like to do?")
+    print("\n")
+    time.sleep(1)
     print("1 - Add Task")
+    time.sleep(0.5)
     print("2 - View Already Added Tasks")
+    time.sleep(0.5)
     print("3 - Mark Complete a Task")
+    time.sleep(0.5)
     print("4 - Exit the application")
+    time.sleep(2)
+    print("")
 
-    choice = input("Enter choice: ")
+    choice = input("Enter choice (Please ensure you input the number!): ")
 
     # ---------------------------------
     # Add Task
@@ -77,13 +84,87 @@ while a == True:
     if choice == "1":
 
         print("\n↓↓↓↓↓↓↓↓↓↓↓↓\n")
+        time.sleep(1)
+        print("You have chosen")
+        time.sleep(0.2)
+        print("Add Task")
+        time.sleep(0.2)
 
-        subject = input("Enter Subject: ")
-        task_name = input("Task Name: ")
+        # -------------------------
+        # Subject (anything can be inputted, not empty)
+        # -------------------------
+        while True:
+            subject = input("Enter Subject: ")
+            if subject:
+                break
+            else:
+                print("Oopsies! Subject cannot be empty! Let's try that again!")
+                time.sleep(1)
+
+        time.sleep(0.5)
+
+        # -------------------------
+        # Task Name (anything can be inputted, not empty)
+        # -------------------------
+        while True:
+            task_name = input("Task Name: ")
+            if task_name:
+                break
+            else:
+                print("Whoops! Task name cannot be empty! Let's try that again!")
+                time.sleep(1)
+
+        time.sleep(0.5)
+
+        # -------------------------
+        # Requirement Details (this is completely optional, but i cleaned it up to match the format)
+        # -------------------------
         requirement = input("Requirement Details: ")
-        deadline = input("Deadline (MM/DD/YY): ")
-        exact_time_deadline = input("Exact Time (HH:MM AM/PM): ")
-        urgency = input("Urgency (Low/Medium/High): ")
+        time.sleep(0.5)
+
+        # -------------------------
+        # Deadline (format is strictly MM/DD/YY)
+        # -------------------------
+        while True:
+            deadline = input("Deadline (MM/DD/YY): ")
+            try:
+                datetime.strptime(deadline, "%m/%d/%y") # .strptime helps convert a string representation of a specific date into a Python object (datetime)
+                break
+            except ValueError:
+                print("Wait! Use the format MM/DD/YY (e.g., 04/15/26). Let's do that again!")
+                time.sleep(1)
+
+        time.sleep(0.5)
+
+        # -------------------------
+        # Exact Time (format is strictly HH:MM AM/PM)
+        # -------------------------
+        while True:
+            exact_time_deadline = input("Exact Time (HH:MM AM/PM): ")
+            if exact_time_deadline == "":
+                exact_time_deadline = "N/A"
+                break
+            try:
+                datetime.strptime(exact_time_deadline, "%I:%M %p")
+                break
+            except ValueError:
+                print("Hold up! Use HH:MM AM/PM. Please do not use the 24-hour time format. Let's try that again!")
+                time.sleep(1)
+
+        time.sleep(0.5)
+
+        # -------------------------
+        # Urgency (choices are limited to Low, Medium, or High)
+        # -------------------------
+        while True:
+            urgency = input("Urgency (Low/Medium/High): ").capitalize()
+            if urgency in ["Low", "Medium", "High"]:
+                break
+            else:
+                print("That's not part of the choices! D: Choose Low, Medium, or High.")
+                time.sleep(1)
+
+        time.sleep(0.5)
 
         status = "Pending"
 
@@ -98,7 +179,7 @@ while a == True:
         }
 
         tasks.append(task)
-
+        
         with open(filename, "w") as file:
             json.dump({"tasks": tasks}, file, indent=4)
 
