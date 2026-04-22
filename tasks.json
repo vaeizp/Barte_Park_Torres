@@ -1,31 +1,22 @@
 {
     "tasks": [
         {
-            "subject": "social science",
-            "task_name": "venn diagram",
-            "requirement": "colonialism vs imperialism",
-            "deadline": "12/25/23",
-            "time": "11:59 PM",
-            "urgency": "medium",
-            "status": "Completed"
-        },
-        {
             "subject": "wow",
             "task_name": "wowwow",
             "requirement": "wow",
             "deadline": "11/11/11",
             "time": "11:59 PM",
             "urgency": "Low",
-            "status": "Pending"
+            "status": "Completed"
         },
         {
-            "subject": "1",
-            "task_name": "1",
-            "requirement": "1",
+            "subject": "ComSci",
+            "task_name": "Presentation",
+            "requirement": "",
             "deadline": "11/11/11",
-            "time": "11:11 PM",
-            "urgency": "Low",
-            "status": "Pending"
+            "time": "N/A",
+            "urgency": "High",
+            "status": "Completed"
         }
     ]
 }
